@@ -1,0 +1,84 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAE7DC; /* Soothing cream-like background */
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.app-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.word-container, .saved-words-container {
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #222;
+    font-size: 1.8rem; /* Larger size for headings */
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #008CBA;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 700; /* Make button text bolder */
+}
+
+button:hover {
+    background-color: #005f73;
+    transform: translateY(-2px);
+}
+
+#savedWordsList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#savedWordsList li {
+    border-bottom: 1px solid #eee;
+    padding: 8px 0;
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+#wordOfTheDay p {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+#definitionDisplay, #exampleDisplay {
+    font-style: italic;
+    font-size: 1rem; /* Optimal size for readability */
+}
